@@ -1,0 +1,42 @@
+.background{width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 468px;
+    right: 114px;
+}
+
+
+.shape:first-child {
+    background: linear-gradient( #1845ad, #23a2f6 );
+    left: 251px;
+    top: -143px;
+}
+
+.shape:last-child {
+    background: linear-gradient( to right, #ff512f, #f09819 );
+    right: -327px;
+    bottom: 230px;
+}
+
+.card {
+    border-radius: 25px;
+    position: absolute;
+    top: 134px;
+    right: 79px;
+    /* padding: 25px 15px; */
+    background-color: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(3px);
+    margin: 50px 0;
+    height: 200px;
+    width: 350px;
+    text-align: left;
+    align: center;
+    box-shadow: 1.5px 2px 4px rgb(48 48 48);
+}
+
+section {
+    margin-top: 20px;
+    margin-right: 500px;
+}
+

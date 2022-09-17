@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MedBase Card</title>
+</head>
+<body>
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<div class="card">
+  
+        <div class="top">
+          <h2 class="name">Raihan Khan</h2>
+          <img class="circle-img"
+            src="https://cdn-icons-png.flaticon.com/512/219/219986.png"
+            alt="avatar_img"
+          />
+        </div>
+        <div class="bottom">
+          <p class="info">XXXX XXXX XXXX</p>
+          <p class="info">+91 8961675822</p>
+        </div>
+      </div>
+</body>
+<style>
+
+body{
+  background-color: black;
+}
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -100px;
+    top: -100px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: 10px;
+    bottom: 230px;
+}
+
+
+.card {
+  border-radius: 25px;
+  position: absolute;
+  top: 70px; /*CHANGE*/
+  right: 500px; /*THESE*/
+  /* padding: 25px 15px; */
+  background-color: rgba(255,255,255, 0.2);
+  backdrop-filter: blur(3px);
+  margin: 50px 0;
+  height: 200px;
+  width: 350px;
+  text-align: left;
+  align: center;
+  box-shadow:  1.5px 2px 4px rgb(48, 48, 48);
+}
+.top {
+
+  border-radius: 25px 25px 0 0;
+  height: 90px;
+  width: 100%;
+  background-color: rgba(255,255,255, 0.15);
+  backdrop-filter: blur(1px);
+  position: relative;
+  top: -31px;
+  left: 0;
+  /* display: flex; */
+}
+.name {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 9% 20px 0;
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+.circle-img {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  position: relative;
+  left: 210px;
+  bottom: 20px;
+  width: 110px;
+  z-index: +1;
+}
+
+.bottom {
+  margin-top: -30px;
+  margin-left: 20px;
+}
+
+.info {
+
+  margin: 20px 0;
+  color: #ffffff;
+}
+</style>
+</html>
